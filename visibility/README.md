@@ -1,0 +1,1 @@
+# We have private, entry and public functions.
