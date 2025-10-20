@@ -4,11 +4,13 @@ module build::build;
 // For Move coding conventions, see
 // https://docs.sui.io/concepts/sui-move-concepts/conventions
 
-fun init(ctx: &mut TxContext) {
-    let _ = ctx;
+fun init(_ctx: &mut TxContext) {
+    let _ = _ctx;
 }
 
-fun init_with_capability(ctx: &mut TxContext, capability: &mut Capability) {
-    let _ = ctx;
+public struct Capability has store {}
+
+public fun init_with_capability(_ctx: &mut TxContext, capability: &mut Capability) {
+    let _ = _ctx;
     let _ = capability;
 }
