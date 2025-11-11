@@ -37,15 +37,13 @@ fun test_testing_fail() {
     abort ENotImplemented
 }
 
+#[test]
 fun test_compare(): bool {
     let a = 5;
     let b = 10;
     testing::compare(a, b);
     let result = testing::sum(a, b);
     let compare = a + b;
-    if (testing::compare(a, b) && result == compare) {
-        true
-    } else {
-        false
-    }
+    assert!(testing::compare(a, b) && result == compare);
+    true
 }
